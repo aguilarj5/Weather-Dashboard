@@ -1,0 +1,65 @@
+* {
+
+}
+
+header {
+    height: 75px;
+    background-image: linear-gradient(to right, blue , purple);
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+#search-city {
+    font-size: 32px;
+    margin: 10px;
+    width: 90%;
+}
+
+#searchText {
+    margin: 10px;
+    border: solid;
+    width: 86%;
+}
+
+#searchBtn {
+    background-color: rgb(6, 130, 245);
+    color: grey;
+    margin: 10px;
+    width: 90%;
+}
+
+#searchBtn:hover {
+    background-color: white;
+}
+
+aside {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    width: 20%;
+}
+
+section {
+    float: right;
+}
+
+#weatherDisplay {
+    border: solid;
+    margin: 15px;
+    width: 75%
+}
+
+#fiveLabel {
+    margin-top: 25px;
+}
+
+#fiveDay {
+    margin: 15px;
+    width: 75%;
+}
+
+
