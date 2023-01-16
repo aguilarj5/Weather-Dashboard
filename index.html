@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>  
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <aside id="searchSection">
+        <div>
+            <h2>Search for City:</h2>
+            <input type="text" placeholder="city name" id="searchText">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div id="recentSearch"></div>
+    </aside>
+
+    <section id="weatherDisplay">
+        <div id="currentCityWeather">
+            <h2 id="currentCityName"></h2>
+            <h4 id="currentCityTemp"></h4>
+            <h4 id="currentCityWind"></h4>
+            <h4 id="currentCityHum"></h4>
+        </div>
+
+        <div id="fiveDay"></div>
+    </section>
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
