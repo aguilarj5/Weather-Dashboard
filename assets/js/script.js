@@ -14,8 +14,6 @@ function citySearch() {
             return response.json();
         })
         .then(function (data) {
-            console.log(data);
-
             //use weather code to pull image from api
             var iconCode = data.list[0].weather[0].icon;
             var wImage = document.createElement('img');
