@@ -16,7 +16,7 @@ N/A
 ![alt Preview of WebPage](assets/images/preview1.JPG)
 ![alt Preview of WebPage](assets/images/preview2.JPG)
 ### How to Use
-The webpage can be found on the following this link [here.](https://aguilarj5.github.io/Work-Day-Scheduler/)
+The webpage can be found on the following this link [here.](https://aguilarj5.github.io/Weather-Dashboard/)
 
 ### Credits
 Coding Bootcamp

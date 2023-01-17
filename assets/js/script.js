@@ -7,7 +7,7 @@ function citySearch() {
     var searchTxt = document.querySelector('#searchText').value;
     handleRecentSearch(searchTxt);
 
-    var weatherUrl = "http://api.openweathermap.org/data/2.5/forecast?appid=f04a58c9a2e1f1ef45516c6f6b1c8eb6&units=imperial&q=" + searchTxt;
+    var weatherUrl = "https://api.openweathermap.org/data/2.5/forecast?appid=f04a58c9a2e1f1ef45516c6f6b1c8eb6&units=imperial&q=" + searchTxt;
 
     fetch(weatherUrl)
         .then(function (response) {
@@ -19,7 +19,7 @@ function citySearch() {
             //use weather code to pull image from api
             var iconCode = data.list[0].weather[0].icon;
             var wImage = document.createElement('img');
-            wImage.src = "http://openweathermap.org/img/wn/" + iconCode + "@2x.png";
+            wImage.src = "https://openweathermap.org/img/wn/" + iconCode + "@2x.png";
             
             //displays the current city name and date + weather icon
             var cityName = document.querySelector('#currentCityName');
@@ -64,7 +64,7 @@ function citySearch() {
                     //creates img element and finds the corresponding image via the code from data using the url as a src
                     iconCode = data.list[i].weather[0].icon;
                     var wImage = document.createElement('img');
-                    wImage.src = "http://openweathermap.org/img/wn/" + iconCode + "@2x.png";
+                    wImage.src = "https://openweathermap.org/img/wn/" + iconCode + "@2x.png";
 
                     fdDate.appendChild(wImage); //appends image to date
 
