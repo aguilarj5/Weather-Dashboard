@@ -1,4 +1,5 @@
 var searchBtn = document.querySelector('#searchBtn');
+var recentSearches = [];
 
 searchBtn.addEventListener('click', citySearch);
 
@@ -92,15 +93,21 @@ function citySearch() {
 }
 
 function handleRecentSearch(search) {
+    recentSearches = localStorage.getItem('searches');
+    console.log(recentSearches);
+    
+    //creates btn for each search
     var recent = document.querySelector('#recentSearch');
     var recentBtn = document.createElement('button');
 
+    //places btn element on screen for previous searches
     recent.appendChild(recentBtn);
     recentBtn.textContent = search;
     recentBtn.style.width = '100%';
     recentBtn.style.margin = '5px';
-
-    recentBtn.addEventListener('click', function(){
-        document.querySelector('#searchText').value = search;
+    
+    //resets input to previously searched result
+    recentBtn.addEventListener('click', function(){    
+    document.querySelector('#searchText').value = search;
     });
 }
